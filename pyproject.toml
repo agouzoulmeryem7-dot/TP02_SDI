@@ -1,0 +1,24 @@
+[project]
+name = "tp2-mesa"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "meryem-agz", email = "agzmery59@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "ipykernel>=7.4.0",
+    "matplotlib>=3.11.2",
+    "mesa>=3.5.1",
+    "networkx>=3.7",
+    "numpy>=2.5.3",
+    "pandas>=3.0.6",
+]
+
+[project.scripts]
+tp2-mesa = "tp2_mesa:main"
+
+[build-system]
+requires = ["uv_build>=0.12.21,<0.13.0"]
+build-backend = "uv_build"
